@@ -2,6 +2,12 @@ import streamlit as st
 import pandas as pd
 import joblib
 import numpy as np
+import os
+
+# List files in the current directory
+print("Current directory contents:")
+print(os.listdir('.'))
+print("--------------------")
 
 # Load the trained model
 model = joblib.load('titanic_lr_model.pkl')
