@@ -4,7 +4,7 @@ import joblib
 import numpy as np
 
 # Load the trained model
-model = joblib.load('titanic_model.pkl')
+model = joblib.load('titanic_lr_model.pkl')
 
 # Feature names (make sure these match the order used during training)
 feature_names = ['Pclass', 'Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'HasCabin',
